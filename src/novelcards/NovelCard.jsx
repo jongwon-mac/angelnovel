@@ -47,13 +47,21 @@ export function NovelCard() {
               </form>
             </CardContent>
             <CardAction>
-              <Button type="button" variant="outline" className="w-full">
+              <Button
+                type="button"
+                variant="outline"
+                className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
+              >
                 선작
               </Button>
               <br />
               <br />
               <br />
-              <Button type="link" variant="outline" className="w-full">
+              <Button
+                type="link"
+                variant="outline"
+                className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
+              >
                 읽기
               </Button>
             </CardAction>

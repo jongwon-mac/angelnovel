@@ -1,11 +1,10 @@
 import React from "react";
-
-import { AlarmDrop } from "./drops/AlarmDrop";
+import HomeMain from "./pages/Homemain";
 
 function App() {
   return (
     <div className="p-8">
-      <AlarmDrop />
+      <HomeMain />
     </div>
   );
 }

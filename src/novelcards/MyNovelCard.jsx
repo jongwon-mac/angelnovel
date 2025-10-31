@@ -47,13 +47,21 @@ export function MyNovelCard() {
               </form>
             </CardContent>
             <CardAction>
-              <Button type="link" variant="outline" className="w-full">
+              <Button
+                type="link"
+                variant="outline"
+                className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
+              >
                 작품관리
               </Button>
               <br />
               <br />
               <br />
-              <Button type="button" variant="outline" className="w-full">
+              <Button
+                type="button"
+                variant="outline"
+                className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
+              >
                 작품삭제
               </Button>
             </CardAction>

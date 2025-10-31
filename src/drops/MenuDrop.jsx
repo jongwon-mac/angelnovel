@@ -20,7 +20,10 @@ export function MenuDrop() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">
+        <Button
+          variant="outline"
+          className={`bg-blue-500 text-white font-bold py-2 px-4 rounded `}
+        >
           <IoMenuOutline />
         </Button>
       </DropdownMenuTrigger>
