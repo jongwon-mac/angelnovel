@@ -7,10 +7,8 @@ function HomeMain() {
   return (
     <div>
       <TopHeader />
-      <div>
-        <HomeHeader />
-        <MrnHeader />
-      </div>
+      <HomeHeader />
+      <MrnHeader />
       <div>추천소설 TOP 10 박스</div>
     </div>
   );

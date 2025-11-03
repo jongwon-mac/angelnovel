@@ -1,10 +1,10 @@
 import React from "react";
-import HomeMain from "./pages/Homemain";
+import HomeRanking from "./pages/HomeRanking";
 
 function App() {
   return (
     <div className="p-8">
-      <HomeMain />
+      <HomeRanking />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 
 export function InputWithButton() {
   return (
-    <div className="flex w-60 max-w-sm items-center gap-2">
+    <div className="flex w-60 max-w-sm items-center ">
       <Input type="title" placeholder="제목이나 필명을 입력" />
       <Button
         className={`bg-blue-500 text-white font-bold py-2 px-4 rounded`}

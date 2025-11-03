@@ -3,24 +3,20 @@ import SelectionListButton from "../components/SelectionListBt";
 import HomeButton from "../components/HomeBt";
 import MyNovelButton from "../components/MyNovelBt";
 import { MenuDrop } from "../drops/MenuDrop";
-
+import AddNovelButton from "../components/AddNovelBt";
 function MyNovelHeader() {
   return (
-    <div>
-      <b className="p-8">
-        &nbsp;
+    <header className="flex flex-flow: nowrap; items-center  ml-auto bg-blue-500 text-white font-bold">
+      <div>
         <SelectionListButton />
-        &nbsp; <HomeButton />
-        &nbsp; <MyNovelButton />
-        <button
-          type="link"
-          className={`bg-blue-500 text-white font-bold py-2 px-4 rounded`}
-        >
-          신작등록
-        </button>
-        &nbsp; <MenuDrop />
-      </b>
-    </div>
+        <HomeButton />
+        <MyNovelButton />
+      </div>
+      <div className="flex flex-flow: nowrap; ml-auto gap-4  ">
+        <AddNovelButton />
+        <MenuDrop />
+      </div>
+    </header>
   );
 }
 

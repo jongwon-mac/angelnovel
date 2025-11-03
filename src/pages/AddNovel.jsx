@@ -1,6 +1,6 @@
 import React from "react";
 import { GenreSelectDrop } from "../drops/GenreSelectDrop";
-function AddNewNovel() {
+function AddNovel() {
   return (
     <div>
       <div>
@@ -13,4 +13,4 @@ function AddNewNovel() {
   );
 }
 
-export default AddNewNovel;
+export default AddNovel;

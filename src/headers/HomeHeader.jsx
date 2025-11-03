@@ -7,16 +7,19 @@ import { MenuDrop } from "../drops/MenuDrop";
 
 function HomeHeader() {
   return (
-    <div>
-      <b className="p-8">
-        &nbsp;
+    <header className="flex flex-flow: nowrap; items-center  ml-auto bg-blue-500 text-white font-bold">
+      <div>
         <SelectionListButton />
-        &nbsp; <HomeButton />
-        &nbsp; <MyNovelButton />
-        &nbsp; <InputWithButton />
-        &nbsp; <MenuDrop />
-      </b>
-    </div>
+        <HomeButton />
+        <MyNovelButton />
+      </div>
+      <div className="flex flex-flow: nowrap; ml-auto gap-4  ">
+        <div className="bg-white text-black rounded-md">
+          <InputWithButton />
+        </div>
+        <MenuDrop />
+      </div>
+    </header>
   );
 }
 

@@ -4,10 +4,14 @@ import { AlarmDrop } from "../drops/AlarmDrop";
 
 function TopHeader() {
   return (
-    <div className="p-8">
-      <LogoButton />
-      <AlarmDrop />
-    </div>
+    <header className="relative w-full ">
+      <div className="flex justify-center">
+        <LogoButton className="w-56 sm:w-40 md:w-79 lg:w-50" />
+      </div>
+      <div className="absolute top-1 right-2">
+        <AlarmDrop />
+      </div>
+    </header>
   );
 }
 

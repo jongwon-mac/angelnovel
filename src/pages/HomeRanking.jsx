@@ -8,11 +8,15 @@ function HomeRanking() {
   return (
     <div>
       <TopHeader />
-      <div>
-        <HomeHeader />
-        <MrnHeader />
+      <HomeHeader />
+      <MrnHeader />
+      <div className="flex gap-2">
+        <button>전체</button>
+        <button>조회수</button>
+        <button>추천수</button>
+        <button>최신조회수</button>
+        <button>최신추천수</button>
       </div>
-      <div>전체,조회수,추천수, 최신조회수,최신추천수</div>
       <div>
         <GenreSelectDrop />
       </div>

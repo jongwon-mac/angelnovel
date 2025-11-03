@@ -6,15 +6,16 @@ import { MenuDrop } from "../drops/MenuDrop";
 
 function SelectionListHeader() {
   return (
-    <div>
-      <b className="p-8">
-        &nbsp;
+    <header className="flex flex-flow: nowrap; items-center  ml-auto bg-blue-500 text-white font-bold">
+      <div>
         <SelectionListButton />
-        &nbsp; <HomeButton />
-        &nbsp; <MyNovelButton />
-        &nbsp; <MenuDrop />
-      </b>
-    </div>
+        <HomeButton />
+        <MyNovelButton />
+      </div>
+      <div className="flex flex-flow: nowrap; ml-auto gap-4  ">
+        <MenuDrop />
+      </div>
+    </header>
   );
 }
 

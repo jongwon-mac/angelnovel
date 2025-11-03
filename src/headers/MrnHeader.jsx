@@ -5,11 +5,11 @@ import RankingButton from "../components/RankingBt";
 
 function MrnHeader() {
   return (
-    <div className="p-8">
+    <header className="flex items-center justify-between px-30 ">
       <LatestButton />
       <MainButton />
       <RankingButton />
-    </div>
+    </header>
   );
 }
 
