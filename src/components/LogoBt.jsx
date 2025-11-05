@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "../assets/logo.png";
-
+import { Link } from "react-router-dom";
 function LogoButton({ className = "logo" }) {
   return (
-    <button type="button" className={` ${className}`}>
+    <Link to="/HomeMain" type="button" className={` ${className}`}>
       <img src={logo} alt="로고" />
-    </button>
+    </Link>
   );
 }
 

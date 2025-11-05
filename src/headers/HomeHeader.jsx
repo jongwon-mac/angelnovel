@@ -13,7 +13,7 @@ function HomeHeader() {
         <HomeButton />
         <MyNovelButton />
       </div>
-      <div className="flex flex-flow: nowrap; ml-auto gap-4  ">
+      <div className="flex flex-flow: nowrap; ml-auto gap-4">
         <div className="bg-white text-black rounded-md">
           <InputWithButton />
         </div>

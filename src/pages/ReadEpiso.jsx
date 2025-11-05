@@ -1,6 +1,6 @@
 import React from "react";
 import BackButton from "../components/BackBt";
-
+import { Link } from "react-router-dom";
 function ReadEpiso() {
   return (
     <div>
@@ -12,10 +12,10 @@ function ReadEpiso() {
         <div className="작가후기">작가후기 </div>
       </div>
       <div>
-        <button>댓글</button>
+        <Link to="/EpiReviewList">댓글</Link>
       </div>
       <button>이전</button>
-      <button>목차</button>
+      <Link to="/DetailNovel">목차</Link>
       <button>다음</button>
     </div>
   );

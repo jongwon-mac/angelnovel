@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,8 +30,10 @@ export function MenuDrop() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="start">
         <DropdownMenuGroup>
-          <DropdownMenuItem>회원가입/로그인</DropdownMenuItem>
-          <hr />
+          <Link to="/Login">
+            <DropdownMenuItem>회원가입/로그인</DropdownMenuItem>
+            <hr />
+          </Link>
           <DropdownMenuItem>가이드</DropdownMenuItem>
           <hr />
           <DropdownMenuItem>문의/의견</DropdownMenuItem>

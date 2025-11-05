@@ -1,5 +1,6 @@
 import React from "react";
 import { GenreSelectDrop } from "../drops/GenreSelectDrop";
+import { Link } from "react-router-dom";
 function AddNovel() {
   return (
     <div>
@@ -9,6 +10,7 @@ function AddNovel() {
       <div>
         <GenreSelectDrop />
       </div>
+      <Link to="/MyNovel">등록</Link>
     </div>
   );
 }

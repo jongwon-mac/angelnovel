@@ -1,12 +1,15 @@
 import React from "react";
 import ExitButton from "../components/ExitBt";
 import LogoButton from "../components/LogoBt";
+import { Link } from "react-router-dom";
 function Login() {
   return (
     <div>
       <ExitButton />
       <LogoButton />
-      <button>회원가입</button>
+      <Link to="/Signin">
+        <button>회원가입</button>
+      </Link>
       <button>로그인</button>
       <div>환영합니다!!</div>
       <div>

@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 import { Label } from "@/components/ui/label";
 import novelimage from "../assets/novelimage.png";
@@ -47,13 +48,14 @@ export function MyNovelCard() {
               </form>
             </CardContent>
             <CardAction>
-              <Button
+              <Link
+                to="/NovelManage"
                 type="link"
                 variant="outline"
                 className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
               >
                 작품관리
-              </Button>
+              </Link>
               <br />
               <br />
               <br />

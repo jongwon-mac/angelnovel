@@ -10,17 +10,22 @@ function HomeLatest() {
       <TopHeader />
       <HomeHeader />
       <MrnHeader />
-      <div className="flex gap-2">
-        <button>전체</button>
-        <button>5회이상</button>
-        <button>10회이상</button>
-        <button>15회이상</button>
+      <div className="flex flex-flow: nowrap; items-center  ml-auto">
+        <div className="flex gap-2">
+          <button>전체</button>
+          <button>5회이상</button>
+          <button>10회이상</button>
+          <button>15회이상</button>
+        </div>
+        <div className="flex flex-flow: nowrap; ml-auto gap-4">
+          <GenreSelectDrop />
+        </div>
       </div>
-      <div className="flex flex-flow: nowrap; ml-auto gap-4">
-        <GenreSelectDrop />
-      </div>
-      <div>
+      <div className="flex flex-col items-center gap-3">
         <NovelCard />
+        <hr />
+        <NovelCard />
+        <hr />
       </div>
     </div>
   );

@@ -10,18 +10,23 @@ function HomeRanking() {
       <TopHeader />
       <HomeHeader />
       <MrnHeader />
-      <div className="flex gap-2">
-        <button>전체</button>
-        <button>조회수</button>
-        <button>추천수</button>
-        <button>최신조회수</button>
-        <button>최신추천수</button>
+      <div className="flex flex-flow: nowrap; items-center  ml-auto">
+        <div className="flex gap-2">
+          <button>전체</button>
+          <button>조회수</button>
+          <button>추천수</button>
+          <button>최신조회수</button>
+          <button>최신추천수</button>
+        </div>
+        <div className="flex flex-flow: nowrap; ml-auto gap-4">
+          <GenreSelectDrop />
+        </div>
       </div>
-      <div>
-        <GenreSelectDrop />
-      </div>
-      <div>
+      <div className="flex flex-col items-center gap-3">
         <NovelCard />
+        <hr />
+        <NovelCard />
+        <hr />
       </div>
     </div>
   );

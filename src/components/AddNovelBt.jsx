@@ -1,10 +1,10 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function AddNovelButton({ className = "AddNovel" }) {
   return (
-    <button type="button" className={` ${className}`}>
+    <Link to="/AddNovel" type="button" className={` ${className}`}>
       신작등록
-    </button>
+    </Link>
   );
 }
 

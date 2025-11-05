@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardAction,
@@ -57,13 +58,14 @@ export function NovelCard() {
               <br />
               <br />
               <br />
-              <Button
+              <Link
+                to="/DetailNovel"
                 type="link"
                 variant="outline"
                 className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
               >
                 읽기
-              </Button>
+              </Link>
             </CardAction>
           </CardHeader>
         </div>

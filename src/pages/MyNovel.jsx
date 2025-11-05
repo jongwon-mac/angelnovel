@@ -9,9 +9,10 @@ function MyNovel() {
       <div>
         <MyNovelHeader />
       </div>
-      <div>프로필박스</div>
-      <div>내작품</div>
-      <div>
+      <div className="flex justify-center ">프로필박스</div>
+      <div className="flex flex-col items-center gap-3">
+        <div>내작품</div>
+        <MyNovelCard />
         <MyNovelCard />
       </div>
     </div>

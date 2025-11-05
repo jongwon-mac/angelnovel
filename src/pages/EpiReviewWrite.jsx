@@ -1,25 +1,21 @@
 import React from "react";
-import LogoButton from "../components/LogoBt";
 import ExitButton from "../components/ExitBt";
 import { Link } from "react-router-dom";
-function TotalReviewWrite() {
+function EpiReviewWrite() {
   return (
     <div>
-      <div className="flex justify-center">
-        <LogoButton className="w-56 sm:w-40 md:w-79 lg:w-50" />
-      </div>
       <ExitButton />
       <div className="flex flex-col items-center gap-3">
         <div>작성텍스트</div>
         <div>
-          <Link to="/TotalReviewList">등록</Link>
+          <Link to="/EpiReviewList">등록</Link>
         </div>
       </div>
       <div className="flex flex-row">
-        감상총평 <div>O</div>
+        댓글 <div>O</div>
       </div>
     </div>
   );
 }
 
-export default TotalReviewWrite;
+export default EpiReviewWrite;

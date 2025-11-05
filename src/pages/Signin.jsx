@@ -1,13 +1,16 @@
 import React from "react";
 import ExitButton from "../components/ExitBt";
 import LogoButton from "../components/LogoBt";
+import { Link } from "react-router-dom";
 function Signin() {
   return (
     <div>
       <ExitButton />
       <LogoButton />
       <button>회원가입</button>
-      <button>로그인</button>
+      <Link to="/Login">
+        <button>로그인</button>
+      </Link>
       <div>환영합니다!!</div>
       <div>
         필명 : <input type="text" />

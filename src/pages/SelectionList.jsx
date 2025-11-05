@@ -6,10 +6,11 @@ function SelectionList() {
   return (
     <div>
       <TopHeader />
-      <div>
-        <SelectionListHeader />
-      </div>
-      <div>
+      <SelectionListHeader />
+      <div className="flex flex-col items-center gap-3">
+        선작목록
+        <NovelCard />
+        <hr />
         <NovelCard />
       </div>
     </div>
