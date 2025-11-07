@@ -1,16 +1,13 @@
 import React from "react";
+import BackButton from "../components/BackBt";
 import TopHeader from "../headers/TopHeader";
-import MyNovelHeader from "../headers/MyNovelHeader";
-import { MyNovelCard } from "../novelcards/MyNovelCard";
+import { NovelCard } from "../novelcards/NovelCard";
 import profile from "../assets/profile.png";
-import { Link } from "react-router-dom";
-function MyNovel() {
+function WriterInfo() {
   return (
     <div className="flex flex-col gap-3">
       <TopHeader />
-      <div>
-        <MyNovelHeader />
-      </div>
+      <BackButton />
       <div className="user-photo-wrapper flex flex-col items-center gap-3  bg-sky-200">
         <div>
           <img src={profile} alt="유저 프로필 사진" />
@@ -21,14 +18,14 @@ function MyNovel() {
           </h4>
           <p>나는....나다!!</p>
         </div>
-        <Link to="/ProfileFix">수정</Link>
       </div>
       <div className="flex flex-col items-center gap-3">
-        <b>내작품</b>
-        <MyNovelCard />
-        <MyNovelCard />
+        <b>작품목록</b>
+        <NovelCard />
+        <NovelCard />
       </div>
     </div>
   );
 }
-export default MyNovel;
+
+export default WriterInfo;

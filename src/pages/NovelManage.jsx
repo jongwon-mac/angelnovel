@@ -18,8 +18,15 @@ function NovelManage() {
       </div>
       <div className="flex flex-col items-center gap-3">
         <DetailNovelCard />
+        <Link
+          to="/NovelInfoFix"
+          className="flex flex-flow: nowrap; justify-center   bg-blue-500 text-white font-bold "
+        >
+          작품정보 수정
+        </Link>
         <BaseStoryText />
       </div>
+
       <div className="flex flex-row justify-center ">
         <button>목차</button>
         <TotalReviewButton />

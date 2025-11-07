@@ -20,7 +20,7 @@ export function GenreSelectDrop() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline">
-          필터
+          장르
           <FaCaretDown className="ml-2" />
         </Button>
       </DropdownMenuTrigger>

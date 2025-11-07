@@ -16,6 +16,9 @@ import ReadEpiso from "./pages/ReadEpiso";
 import NovelWrite from "./pages/NovelWrite";
 import EpiReviewList from "./pages/EpiReviewList";
 import EpiReviewWrite from "./pages/EpiReviewWrite";
+import ProfileFix from "./pages/ProfileFix";
+import WriterInfo from "./pages/WriterInfo";
+import NovelInfoFix from "./pages/NovelInfoFix";
 function App() {
   return (
     <div className="p-8">
@@ -35,7 +38,10 @@ function App() {
         <Route path="/ReadEpiso" element={<ReadEpiso />} />
         <Route path="/NovelWrite" element={<NovelWrite />} />
         <Route path="/EpiReviewList" element={<EpiReviewList />} />
+        <Route path="/ProfileFix" element={<ProfileFix />} />
         <Route path="/EpiReviewWrite" element={<EpiReviewWrite />} />
+        <Route path="/WriterInfo" element={<WriterInfo />} />
+        <Route path="/NovelInfoFix" element={<NovelInfoFix />} />
       </Routes>
     </div>
   );

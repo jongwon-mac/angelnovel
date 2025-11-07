@@ -7,12 +7,12 @@ import AddNovelButton from "../components/AddNovelBt";
 function MyNovelHeader() {
   return (
     <header className="flex flex-flow: nowrap; items-center  ml-auto bg-blue-500 text-white font-bold">
-      <div>
+      <div className="flex gap-2 flex-row items-center">
         <SelectionListButton />
         <HomeButton />
         <MyNovelButton />
       </div>
-      <div className="flex flex-flow: nowrap; ml-auto gap-4  ">
+      <div className="flex flex-flow: row; nowrap; items-center ml-auto gap-4  ">
         <AddNovelButton />
         <MenuDrop />
       </div>

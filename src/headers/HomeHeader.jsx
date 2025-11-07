@@ -4,11 +4,10 @@ import HomeButton from "../components/HomeBt";
 import MyNovelButton from "../components/MyNovelBt";
 import { InputWithButton } from "../components/InputWithBt";
 import { MenuDrop } from "../drops/MenuDrop";
-
 function HomeHeader() {
   return (
-    <header className="flex flex-flow: nowrap; items-center  ml-auto bg-blue-500 text-white font-bold">
-      <div>
+    <header className="flex flex-flow: nowrap; justify-center   bg-blue-500 text-white font-bold ">
+      <div className="flex gap-2 flex-row items-center">
         <SelectionListButton />
         <HomeButton />
         <MyNovelButton />

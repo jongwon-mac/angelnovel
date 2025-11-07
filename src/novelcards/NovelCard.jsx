@@ -15,19 +15,19 @@ import novelimage from "../assets/novelimage.png";
 
 export function NovelCard() {
   return (
-    <Card className="w-full max-w-sm">
-      <div className="flex items-start ">
-        <div className="novel-cover ">
+    <Card className="flex flex-col w-full max-w-sm">
+      <div className="flex flex-row ">
+        <div className="flex flex-col justify-center novel-cover  rounded-lg ">
           <img
             src={novelimage}
             alt="작품표지"
-            className="w-23 h-30 object-cover rounded-sm"
+            className="w-23 h-30 object-cover rounded-sm transition-all duration-500 ease-in-out hover:scale-525"
           />
         </div>
         <div className="flex-1 min-w-0">
           <CardHeader>
             <CardContent>
-              <form>
+              <form className="flex flex-col justify-center">
                 <div className="flex flex-col gap-3">
                   <CardTitle>제목</CardTitle>
                   <div className="grid gap-0">
@@ -35,7 +35,9 @@ export function NovelCard() {
                   </div>
                   <div className="grid gap-0">
                     <div className="flex items-center">
-                      <Label htmlFor="pen-name">필명</Label>
+                      <Link to="/WriterInfo">
+                        <Label htmlFor="pen-name">필명</Label>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -47,7 +49,7 @@ export function NovelCard() {
                 </div>
               </form>
             </CardContent>
-            <CardAction>
+            <CardAction className="flex flex-col items-center gap-12">
               <Button
                 type="button"
                 variant="outline"
@@ -55,16 +57,14 @@ export function NovelCard() {
               >
                 선작
               </Button>
-              <br />
-              <br />
-              <br />
-              <Link
-                to="/DetailNovel"
-                type="link"
-                variant="outline"
-                className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
-              >
-                읽기
+              <Link to="/DetailNovel">
+                <Button
+                  type="link"
+                  variant="outline"
+                  className={`bg-blue-500 text-white font-bold py-2 px-4 rounded w-full`}
+                >
+                  읽기
+                </Button>
               </Link>
             </CardAction>
           </CardHeader>
